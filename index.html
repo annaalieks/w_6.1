@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Навчай - для України</title>
+    <link rel="stylesheet" href="css/w6.1.css">
+</head>
+
+<body>
+    <main>
+        <section class="grid grid--none">
+            <div class="grid__heading heading margin--bottom-mobile">
+                <h3 class="heading__subtitle heading__subtitle--blue uppercase">Підтримка</h3>
+                <h2 class="heading__title uppercase">Поширені запитання — додаткова інформація</h2>
+                <span class="heading__inscription">Програма для змін у країні</span>
+            </div>
+            <div class="grid__qanda">
+                <div class="qanda">
+                    <h3 class="qanda__q uppercase">Які переваги участі у програмі для школи?</h3>
+                    <div class="qanda__a">
+                        <p>Школа отримує позашкільні заходи для дітей, можливості професійного розвитку для
+                            адміністрації та педагогічного колективу, а також середовище постійного руху до нових
+                            освітніх програм в співтоваристві однодумців.</p>
+                    </div>
+                </div>
+                <div class="qanda qanda--collapsed">
+                    <h3 class="qanda__q uppercase">Хто стає учасниками програми?</h3>
+                    <div class="qanda__a">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates nesciunt in mollitia
+                            sunt labore tenetur veritatis, rem iure harum. Repellat, quisquam? Tenetur odio tempora
+                            soluta et earum odit non facere.</p>
+                    </div>
+                </div>
+                <div class="qanda qanda--collapsed">
+                    <h3 class="qanda__q uppercase">Яку підготовку отримують<br> учасники від програми?</h3>
+                    <div class="qanda__a">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos ratione dicta vitae delectus
+                            vero ullam id at, incidunt expedita quae veniam odio distinctio labore tempora, quasi quam
+                            qui aliquam quaerat.</p>
+                    </div>
+                </div>
+                <div class="qanda qanda--collapsed">
+                    <h3 class="qanda__q uppercase">Як програма підтримує учасників<br> протягом 2-х років у програмі?
+                    </h3>
+                    <div class="qanda__a">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima dolores laborum debitis
+                            eveniet tenetur vitae, vero consequatur saepe numquam necessitatibus sequi fuga? Aperiam
+                            voluptates officia reiciendis commodi iste ut voluptas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="grid grid--none">
+            <div class="grid__heading heading">
+                <h3 class="heading__subtitle heading__subtitle--blue uppercase">Інвестиції</h3>
+                <h2 class="heading__title uppercase">Зробити<br> інвестиції у програму</h2>
+            </div>
+            <div class="grid__form-heading margin--bottom">
+                <h3 class="heading__subtitle uppercase">Виберіть спосіб оплати</h3>
+            </div>
+            <form class="grid__form" action="result.html" method="get" target="_blank">
+                <div class="container container--wrapped margin--bottom">
+                    <div class="container container--align">
+                        <input class="form__input form__input--radio" type="radio" id="card" name="payment_method"
+                            value="card" checked>
+                        <label class="form__label" for="card">Банківська карта</label>
+                    </div>
+                    <div class="container container--align">
+                        <input class="form__input form__input--radio" type="radio" id="paypal" name="payment_method"
+                            value="paypal">
+                        <label class="form__label" for="paypal">PayPal</label>
+                    </div>
+                    <div class="container container--align">
+                        <input class="form__input form__input--radio" type="radio" id="bank" name="payment_method"
+                            value="bank">
+                        <label class="form__label" for="bank">Банківська платіжна квитанція</label>
+                    </div>
+                </div>
+                <h3 class="heading__subtitle uppercase">Банківська карта</h3>
+                <div class="payment-amount margin--top-m">
+                    <div class="container">
+                        <input type="radio" id="50000" name="amount" value="50000" hidden checked>
+                        <label class="payment-amount__label payment-amount__label--left-border" for="50000">50
+                            000</label>
+                        <input type="radio" id="30000" name="amount" value="30000" hidden>
+                        <label class="payment-amount__label" for="30000">30 000</label>
+                        <input type="radio" id="10000" name="amount" value="10000" hidden>
+                        <label class="payment-amount__label" for="10000">10 000</label>
+                        <input type="radio" id="1000" name="amount" value="1000" hidden>
+                        <label class="payment-amount__label" for="1000">1 000</label>
+                    </div>
+                    <div>
+                        <input class="payment-amount__input form__input" type="number" name="amount"
+                            placeholder="Інша сумма">
+                    </div>
+                </div>
+                <div class="container margin--top-s margin--bottom">
+                    <div class="container container--align">
+                        <input class="form__input form__input--radio" type="radio" id="monthly" name="regularity"
+                            value="monthly" checked>
+                        <label class="form__label" for="monthly">Щомісячно</label>
+                    </div>
+                    <div class="container container--align">
+                        <input class="form__input form__input--radio" type="radio" id="once" name="regularity"
+                            value="once">
+                        <label class="form__label" for="once">Одноразово</label>
+                    </div>
+                </div>
+                <div class="margin--bottom">
+                    <label class="form__label--users-data uppercase" for="name">Імʼя</label>
+                    <input class="form__input form__input--underlined" type="text" name="name" id="name"
+                        placeholder="Напишіть ваше імʼя" required>
+                </div>
+                <div class="margin--bottom">
+                    <label class="form__label--users-data uppercase" for="email">Email</label>
+                    <input class="form__input form__input--underlined" type="email" name="email" id="email"
+                        placeholder="Напишіть вашу електронну адресу" required>
+                </div>
+                <div class="margin--top-s">
+                    <label class="form__label">
+                        <input class="form__input form__input--checkbox" type="checkbox" name="accept offer contact"
+                            checked>
+                        Я приймаю <a class="link" href="#" target="_blank">Договір оферти</a>
+                    </label>
+                </div>
+                <div class="margin--top-s">
+                    <label class="form__label">
+                        <input class="form__input form__input--checkbox" type="checkbox" name="gdpr consect" checked>
+                        Я приймаю <a class="link" href="#" target="_blank">Угоду про використання персональних даних</a>
+                    </label>
+                </div>
+                <div class="margin--top-l">
+                    <input class="button button--submit uppercase" type="submit" value="Відправити">
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>

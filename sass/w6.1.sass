@@ -34,6 +34,14 @@ $blue: #0536FC
 
 /* Other mixins */
 
+@mixin table()
+    @media only screen and (min-width: 768px) and (max-width: 1200px)
+        @content
+
+@mixin desctop()
+    @media only screen and (min-width: 1200px)
+        @content
+
 @mixin mark()
     width: 20px
     height: 20px
@@ -113,16 +121,22 @@ p
         padding-bottom: 20px
     &--wrapped
         flex-wrap: wrap
-    &--bottom-margin
+
+/*Margins*/
+
+.margin--bottom
+    margin-bottom: 30px
+    &-mobile
         margin-bottom: 30px
-        &-mobile
-            margin-bottom: 30px
-    &--top-margin-l
-        margin-top: 50px
-    &--top-margin-m
-        margin-top: 30px
-    &--top-margin-s
-        margin-top: 20px
+
+.margin--top-l
+    margin-top: 50px
+
+.margin--top-m
+    margin-top: 30px
+
+.margin--top-s
+    margin-top: 20px
 
 /*Q&A*/
 
@@ -213,7 +227,7 @@ p
 
 /* MEDIUM SCREENS */
 
-@media screen and (min-width: 768px) and (max-width: 1200px)
+@include table
 
     .grid--none
         width: 80%
@@ -229,7 +243,7 @@ p
 
 /* LARGE SCREENS */
 
-@media screen and (min-width: 1200px)
+@include desctop
 
     /* Grid */
 
